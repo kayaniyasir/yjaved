@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kayaniyasir.github.io/yjaved/sitemap.xml
