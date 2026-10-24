@@ -162,14 +162,14 @@
     {
       "year": 2024,
       "title": "Cyber-Threat-Intelligence: Detection of Selective Packet Drops and Fake Packet Attacks in Opportunistic Networks (DOSFAN)",
-      "venue": "2024 8th International Conference on Information System and Data Mining (ICISDM), ACM",
-      "authors": "Khalid, W.; Ahmad, N.; Javed, Y.; Alam, A.; Arshad, M.",
+      "venue": "Proceedings of ICISDM 2024, pp. 50–56, ACM",
+      "authors": "Khalid, W.; Ahmed, N.; Javed, Y.; Alam, A.; Arshad, M.",
       "topic": "Cybersecurity & secure networks",
       "type": "Conference",
       "doi": "10.1145/3686397.3686406",
       "url": "",
       "status": "linked",
-      "sourceNote": "Publisher proceedings DOI plus conference programme"
+      "sourceNote": "ACM DOI and DBLP record (authors, proceedings and pages)"
     },
     {
       "year": 2024,
