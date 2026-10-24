@@ -149,7 +149,7 @@
 .signature-home #expertise .card a{color:#8d5238}
 /* Interior pages: distinct bright editorial titles instead of the same dark banner */
 body:not(.signature-home) .small-hero{
-  background:#f0ede6;padding:80px 0 88px;border-bottom:1px solid #c8c5bc;color:#252d26}
+  position:relative;isolation:isolate;background:#f0ede6;padding:80px 0 88px;border-bottom:1px solid #c8c5bc;color:#252d26}
 body:not(.signature-home) .small-hero::before{
   content:"";display:block;position:absolute;top:0;left:0;bottom:0;width:5px;background:#c5805d}
 body:not(.signature-home) .small-hero h1{
