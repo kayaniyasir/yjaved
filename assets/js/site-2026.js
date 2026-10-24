@@ -20,10 +20,41 @@
  document.querySelectorAll("[data-print-cv]").forEach(button=>button.addEventListener("click",()=>window.print()));
  const search=document.querySelector("[data-publication-search]");
  if(search){
-  const records=[...document.querySelectorAll("[data-publication]")];
+  const topic=document.querySelector("[data-publication-topic]");
+  const type=document.querySelector("[data-publication-type]");
+  const year=document.querySelector("[data-publication-year]");
+  const reset=document.querySelector("[data-publication-reset]");
+  const rows=[...document.querySelectorAll("[data-publication]")];
+  const groups=[...document.querySelectorAll("[data-publication-group]")];
   const counter=document.querySelector("[data-publication-count]");
   const empty=document.querySelector("[data-publication-empty]");
-  const update=()=>{const needle=search.value.trim().toLowerCase();let visible=0;for(const el of records){const show=!needle||el.textContent.toLowerCase().includes(needle);el.hidden=!show;if(show)visible++}if(counter)counter.textContent=visible+" publications shown";if(empty)empty.hidden=visible!==0};
-  search.addEventListener("input",update);update();
+  const update=()=>{
+   const q=search.value.trim().toLocaleLowerCase();
+   const selectedTopic=topic?.value||"";
+   const selectedType=type?.value||"";
+   const selectedYear=year?.value||"";
+   let visible=0;
+   for(const row of rows){
+    const show=(!q||row.textContent.toLocaleLowerCase().includes(q))
+     &&(!selectedTopic||row.dataset.topic===selectedTopic)
+     &&(!selectedType||row.dataset.type===selectedType)
+     &&(!selectedYear||row.dataset.year===selectedYear);
+    row.hidden=!show;
+    if(show)visible++;
+   }
+   for(const group of groups)group.hidden=![...group.querySelectorAll("[data-publication]")].some(row=>!row.hidden);
+   if(counter)counter.textContent=visible+" of "+rows.length+" publications shown";
+   if(empty)empty.hidden=visible!==0;
+   if(reset)reset.hidden=!q&&!selectedTopic&&!selectedType&&!selectedYear;
+  };
+  for(const ctrl of [search,topic,type,year])ctrl?.addEventListener("input",update);
+  reset?.addEventListener("click",e=>{
+   e.preventDefault();
+   search.value="";
+   for(const ctrl of [topic,type,year])if(ctrl)ctrl.value="";
+   update();
+   search.focus();
+  });
+  update();
  }
 })();
