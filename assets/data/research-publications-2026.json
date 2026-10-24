@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-25",
   "scope": "Expertise-related publications documented in October 2026 academic CV plus verified PSU/publisher profiles; not an assertion of all 147 lifetime indexed works.",
-  "source": "Yasir_Javed_CV_Updated_October_2026(1).pdf; PSU university publication profile; Crossref/publisher bibliographic pages",
+  "source": "October 2026 academic CV; publisher records (Nature, IEEE, ACM, MDPI, IAES, JATIT); Crossref/ORCID and coauthor publication records.",
   "categories": [
     "Cybersecurity & secure networks",
     "AI & software engineering",
@@ -68,13 +68,14 @@
     {
       "year": 2025,
       "title": "Automating Accessibility Compliance: Leveraging Machine Learning to Analyze Developer Challenges with WCAG Guidelines",
-      "venue": "8th International Conference on Data Science and Machine Learning Applications (CDMA), IEEE",
+      "venue": "2025 8th International Conference on Data Science and Machine Learning Applications (CDMA), IEEE",
       "authors": "Alghamdi, A. M.; Aljedaani, W.; Ludi, S.; Javed, Y.",
       "topic": "Education, accessibility & quality",
       "type": "Conference",
-      "doi": "",
+      "doi": "10.1109/CDMA61895.2025.00016",
       "url": "",
-      "status": "cv"
+      "status": "linked",
+      "sourceNote": "Conference proceedings DOI and coauthor listing verified"
     },
     {
       "year": 2025,
@@ -155,14 +156,15 @@
     },
     {
       "year": 2024,
-      "title": "Cyber-Threat Intelligence: Detection of Selective Packet Drops and Fake Packet Attacks in Opportunistic Networks",
-      "venue": "DOSFAN conference, USA (CV-reported)",
-      "authors": "Khalid, W.; Ahmed, N.; Javed, Y.; Alam, A.; Arshad, M.",
+      "title": "Cyber-Threat-Intelligence: Detection of Selective Packet Drops and Fake Packet Attacks in Opportunistic Networks (DOSFAN)",
+      "venue": "2024 8th International Conference on Information System and Data Mining (ICISDM), ACM",
+      "authors": "Khalid, W.; Ahmad, N.; Javed, Y.; Alam, A.; Arshad, M.",
       "topic": "Cybersecurity & secure networks",
       "type": "Conference",
-      "doi": "",
+      "doi": "10.1145/3686397.3686406",
       "url": "",
-      "status": "cv"
+      "status": "linked",
+      "sourceNote": "Publisher proceedings DOI plus conference programme"
     },
     {
       "year": 2024,
@@ -200,13 +202,14 @@
     {
       "year": 2024,
       "title": "XEmoAccent: Embracing Diversity in Cross-Accent Emotion Recognition Using Deep Learning",
-      "venue": "IEEE Access (PSU publication record)",
+      "venue": "IEEE Access 12, 41125–41142",
       "authors": "Ahmad, R.; Iqbal, A.; Jadoon, M. M.; Ahmad, N.; Javed, Y.",
       "topic": "AI & software engineering",
       "type": "Journal",
-      "doi": "",
+      "doi": "10.1109/ACCESS.2024.3376379",
       "url": "",
-      "status": "profile"
+      "status": "linked",
+      "sourceNote": "IEEE Xplore record"
     },
     {
       "year": 2023,
@@ -255,13 +258,14 @@
     {
       "year": 2023,
       "title": "Education in the 21st Century: Technological Developments to Meet the Significant Problems",
-      "venue": "International Conference on Studies in Learning and Teaching (ICSLT), Portsmouth, UK",
+      "venue": "2023 9th International Conference on e-Society, e-Learning and e-Technologies, pp. 14–21, ACM",
       "authors": "Javed, Y.; Khahro, S. H.; Jan, R.; Khahro, Q. H.",
       "topic": "Education, accessibility & quality",
       "type": "Conference",
-      "doi": "",
+      "doi": "10.1145/3613944.3613947",
       "url": "",
-      "status": "cv"
+      "status": "linked",
+      "sourceNote": "ACM Crossref DOI record and academic citation"
     },
     {
       "year": 2023,
@@ -387,13 +391,14 @@
     {
       "year": 2020,
       "title": "Insights Discovery Through Hidden Sentiment in Big Data: Evidence from Saudi Arabia's Financial Sector",
-      "venue": "Journal of Asian Finance, Economics and Business",
+      "venue": "Journal of Asian Finance, Economics and Business 7(6), 457–464",
       "authors": "Park, Y.-E.; Javed, Y.",
       "topic": "AI & software engineering",
       "type": "Journal",
-      "doi": "",
+      "doi": "10.13106/jafeb.2020.vol7.no6.457",
       "url": "",
-      "status": "profile"
+      "status": "linked",
+      "sourceNote": "Coauthor bibliography and journal index"
     },
     {
       "year": 2019,
@@ -431,13 +436,14 @@
     {
       "year": 2019,
       "title": "Security Assessment of Four Open Source Software Systems",
-      "venue": "Indonesian Journal of Electrical Engineering and Computer Science",
+      "venue": "Indonesian Journal of Electrical Engineering and Computer Science 16(2), 860–881",
       "authors": "Khan, F. I.; Javed, Y.; Alenezi, M.",
       "topic": "Cybersecurity & secure networks",
       "type": "Journal",
-      "doi": "",
+      "doi": "10.11591/ijeecs.v16.i2.pp860-881",
       "url": "",
-      "status": "profile"
+      "status": "linked",
+      "sourceNote": "Publisher paper (DOI stated in first-page header)"
     },
     {
       "year": 2018,
@@ -469,8 +475,9 @@
       "topic": "Cybersecurity & secure networks",
       "type": "Journal",
       "doi": "",
-      "url": "https://www.jatit.org/volumes/Vol96No14/30Vol96No14.pdf",
-      "status": "linked"
+      "url": "https://www.jatit.org/volumes/ninetysix14.php",
+      "status": "linked",
+      "sourceNote": "Journal of Theoretical and Applied Information Technology official table of contents; no DOI listed"
     },
     {
       "year": 2018,
@@ -508,13 +515,15 @@
     {
       "year": 2016,
       "title": "Open Source Web Application Security: A Static Analysis Approach",
-      "venue": "International Conference on Engineering & MIS (ICEMIS) 2016",
+      "venue": "2016 International Conference on Engineering & MIS (ICEMIS), IEEE",
       "authors": "Alenezi, M.; Javed, Y.",
       "topic": "Cybersecurity & secure networks",
       "type": "Conference",
-      "doi": "",
-      "url": "https://malenezi.github.io/malenezi/publications.html",
-      "status": "profile"
+      "doi": "10.1109/ICEMIS.2016.7745369",
+      "url": "",
+      "status": "linked",
+      "sourceNote": "IEEE proceedings identifier and coauthor paper"
     }
-  ]
+  ],
+  "verificationNote": "45 DOI-linked records; one 2018 JATIT paper with publisher issue URL and no confirmed DOI. DOI metadata remains subject to individual publisher validation across the full bibliography. Specific author contributions are attributed only when journal contribution statements identify the role."
 }
