@@ -35,6 +35,40 @@
   "achievements.html":"leadership"
  };
  menu.querySelectorAll("a[data-page]").forEach(a=>{if(a.dataset.page===name)a.setAttribute("aria-current","page")});
+
+ // Short, natural navigation prompts on the homepage.
+ // Keep section IDs, destinations and content structure unchanged.
+ if(name==="index.html"){
+  const headings={
+   "visitor-guide":"Explore my work",
+   "research-impact":"Research and recognition",
+   "about":"My background",
+   "selected-impact":"Selected work",
+   "expertise":"Areas of expertise",
+   "projects":"Projects",
+   "contact":"Get in touch"
+  };
+  Object.entries(headings).forEach(([id,label])=>{
+   const heading=document.querySelector("#"+id+" h2");
+   if(heading)heading.textContent=label;
+  });
+  const visitor=document.querySelector("#visitor-guide");
+  const intro=visitor?.querySelector(".lede");
+  if(intro)intro.textContent="Find my research, projects, teaching resources and ways to work together.";
+  const prompt=visitor?.querySelector(".guided > strong");
+  if(prompt)prompt.textContent="Choose a topic";
+  const options={
+   organization:"Work together",
+   research:"Research",
+   education:"Teaching & training",
+   student:"Student support",
+   community:"ACM & events"
+  };
+  visitor?.querySelectorAll("[data-intent]").forEach(button=>{
+   const label=options[button.dataset.intent];
+   if(label)button.textContent=label;
+  });
+ }
  const current=groupMap[name];
  if(current)header.querySelector('.portfolio-nav-group[data-group="'+current+'"]')?.classList.add("current");
 })();
