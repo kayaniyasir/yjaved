@@ -43,5 +43,38 @@ body:not(.site-page) .site-header *,body:not(.site-page) .site-footer *{box-sizi
 @media(max-width:890px){.container{width:calc(100% - 54px)}.hero{padding:58px 0 65px}.hero .container{width:calc(100% - 58px)}.hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(200px,.6fr);gap:30px}.hero-portrait{max-width:245px}.hero h1{font-size:clamp(43px,5.5vw,57px)}.hero .hero-lede{font-size:clamp(20px,2.6vw,25px)}.grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}.research-layout{grid-template-columns:repeat(2,minmax(0,1fr))}.research-layout .research-feature{grid-column:1/-1;grid-row:auto;min-height:255px}.research-feature h3{margin-top:18px}.research-mini{grid-column:auto;min-height:175px}.case-points{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-grid{grid-template-columns:1.1fr 1fr;gap:28px}.footer-grid>div:last-child{grid-column:1/-1}.cv-layout{grid-template-columns:1fr}.split{gap:34px}}
 @media(max-width:640px){html{scroll-padding-top:73px}body{font-size:14px}.container{width:calc(100% - 34px)}.site-header .head-top{min-height:65px}.site-header .brand strong{font-size:19px}.site-header .brand small{font-size:8px;letter-spacing:.025em}.site-header .brand-mark{width:35px;height:35px;font-size:14px}.site-header .nav-wrap .container{width:100%}.site-header .site-nav{padding:9px 18px 25px;max-height:calc(100dvh - 65px)}.site-header .menu-toggle{min-height:43px;font-size:11px}.hero{padding:49px 0 54px}.hero:before{display:none}.hero .container{width:calc(100% - 34px)}.hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:30px}.hero .label{font-size:9px;letter-spacing:.11em;margin-bottom:16px}.hero h1{font-size:clamp(41px,9.3vw,52px);line-height:1.11;margin-bottom:17px}.hero .hero-lede{font-size:clamp(20px,5vw,23px);line-height:1.4;margin-bottom:15px}.hero .hero-copy{font-size:13px;line-height:1.78}.hero .hero-foot{font-size:11px;line-height:1.7}.hero .text-links{gap:5px 19px;margin-top:20px}.hero .text-links a{min-height:40px;font-size:11px}.hero-portrait{display:grid;grid-template-columns:minmax(116px,135px) minmax(0,1fr);gap:17px;max-width:none;justify-self:stretch;align-items:center;width:100%;margin:0}.hero-portrait img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain}.hero-portrait figcaption{margin:0;padding:0;font-size:11px}.hero-portrait figcaption strong{font-size:18px}.eyelink{white-space:normal}.section{padding:52px 0}.section h2{font-size:clamp(29px,7.8vw,36px)}.section h3{font-size:21px}.section .intro{font-size:14px}.section-heading{align-items:start;flex-direction:column;gap:9px}.grid-2,.grid-3,.grid-4,.review-list{grid-template-columns:1fr;gap:0}.editorial-item{padding:20px 1px 26px}.research-layout{grid-template-columns:minmax(0,1fr);gap:10px}.research-layout .research-feature,.research-mini{grid-column:1;grid-row:auto;min-height:0}.research-layout .research-feature{padding:26px 23px;min-height:235px}.research-feature h3{font-size:29px;margin:24px 0 14px}.research-mini{padding:21px}.numbers{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 0}.number{padding:8px 12px}.number strong{font-size:clamp(32px,8vw,42px)}.number span{font-size:10px}.publication-row{grid-template-columns:1fr;gap:11px}.pub-links{justify-content:flex-start}.split{grid-template-columns:1fr;gap:15px}.split h2{position:static}.case-mast{grid-template-columns:1fr;gap:12px}.case-points{grid-template-columns:1fr;gap:0}.page-head{padding:54px 0}.page-head h1{font-size:clamp(37px,9.2vw,47px)}.page-head p{font-size:14px}.footer-grid{grid-template-columns:1fr;gap:25px}.footer-grid>div:last-child{grid-column:auto}.site-footer{padding:41px 0 27px}}
 @media(max-width:350px){.site-header .brand-mark{display:none}.site-header .brand strong{font-size:17px}.site-header .brand small{font-size:7px}.hero h1{font-size:39px}.hero-portrait{grid-template-columns:112px minmax(0,1fr);gap:12px}.hero-portrait img{width:100%;height:auto;object-fit:contain}}
+
+/* Professional evidence and grant provenance — restrained editorial treatment */
+.credibility-strip{background:#fbfaf6;border-bottom:1px solid #d9d8ce}
+.credibility-strip .container{width:min(1190px,calc(100% - 88px))}
+.credibility-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;align-items:stretch}
+.credibility-item{display:flex;flex-direction:column;gap:4px;min-width:0;padding:20px 27px 20px 0;margin-right:27px;border:0;border-right:1px solid #ddd8cd;text-decoration:none;color:#27362d;transition:background-color .16s ease}
+.credibility-item:last-child{border:0;margin-right:0}
+.credibility-item span{font:700 10px/1.4 var(--sans);letter-spacing:.11em;text-transform:uppercase;color:#a26746}
+.credibility-item strong{display:block;font:normal 18px/1.3 var(--serif);color:#29352c;letter-spacing:-.02em}
+.credibility-item small{font:600 11px/1.6 var(--sans);color:#667366}
+.credibility-item:hover strong,.credibility-item:focus-visible strong{color:#9a5b3b}
+.funding-evidence-summary{border-top:2px solid #986044;border-bottom:1px solid #c5c7bd;background:#f8f7f2;padding:25px 26px;margin:28px 0}
+.funding-evidence-summary .status{color:#945536}
+.funding-evidence-summary p{max-width:850px;margin:8px 0 10px;color:#4b5c51;font-size:14px;line-height:1.75}
+.funding-evidence-summary a{display:inline-block;color:#895037;font-size:12px;font-weight:700;border-bottom:1px solid #b6937f;text-decoration:none}
+.evidence-card--documented{border-top:2px solid #a36b49;background:#f5f3ed;padding:20px 23px!important}
+.evidence-card--documented h3{font-size:25px}
+.evidence-card--documented p{color:#41564a}
+@media(max-width:890px){
+ .credibility-strip .container{width:calc(100% - 54px)}
+ .credibility-item{padding:19px 16px 19px 0;margin-right:16px}
+ .credibility-item strong{font-size:16px}
+}
+@media(max-width:640px){
+ .credibility-strip .container{width:calc(100% - 34px)}
+ .credibility-grid{grid-template-columns:1fr;gap:0}
+ .credibility-item,.credibility-item:last-child{margin:0;padding:15px 0;min-height:0;border-right:0;border-bottom:1px solid #dedbd3;gap:3px}
+ .credibility-item:last-child{border:0}
+ .credibility-item strong{font-size:18px}
+ .funding-evidence-summary{padding:21px 17px}
+ .evidence-card--documented{padding:19px 17px!important}
+}
+
 @media print{.site-header,.site-footer,.skip,.profile-actions,.jump-list,.no-print{display:none!important}body{background:#fff;color:#111;font-size:10pt}.page-head{background:white;color:black;padding:0 0 15px}.page-head h1{color:#111;font-size:23pt}.page-head p{color:#444}.section{padding:16px 0}.container{width:100%;max-width:none}.grid-2,.grid-3,.grid-4,.cv-layout{grid-template-columns:1fr 1fr}.editorial-item,.case-block,.timeline-entry{break-inside:avoid}a{color:#111;text-decoration:none}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
