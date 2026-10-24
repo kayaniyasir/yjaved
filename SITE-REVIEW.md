@@ -32,3 +32,13 @@ Personal academic, research and professional portfolio.
 
 ## Public source policy
 Use `evidence-notes.html` to track data quality and evidence provenance.
+
+## Layout quality review — 24 October 2026
+- User screenshot identified a too-wide 1,500 px homepage grid, oversized hero, and visually disconnected shaded portrait column.
+- Revised to a centered 1,190 px layout, single charcoal hero surface, desktop portrait up to 286 px, shorter vertical spacing and responsive side-by-side portrait details on phones.
+- Headline size and general section headings reduced. Copper small-text contrast strengthened against light surfaces.
+- The new CSS URL version `v=6` is referenced by all 16 HTML pages to reduce stale-preview styling.
+- Representative local Chromium layout was rendered with the user-provided screenshot portrait crop at 1920, 1440, 768, 390 and 320 px. Prototype layout assertions found no horizontal overflow. Measured prototype hero heights: 566 px at desktop, 500 px at 768 px, and 696–734 px at narrow phone widths.
+- **Verification boundary:** these were representative local mock layouts, NOT an exact deployed-browser render of the repository. The final branch itself still requires desktop and mobile screenshots and direct interactive testing before merge.
+- Repository structural scan: 16 pages have canonical/description and a single H1; all navigation elements present, no duplicate IDs or broken internal anchors; the original 160 Java exercises remain intact.
+- Remaining quality blocker: supplied portrait source resolution is low; use an approved higher-resolution image without digital face reconstruction.
