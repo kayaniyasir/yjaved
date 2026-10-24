@@ -75,3 +75,19 @@ Use `evidence-notes.html` to track data quality and evidence provenance.
 - CV-only and issuer-only awards remain labeled: no invented dates, evidence URLs, rankings or patent validity claims.
 - The public archive intentionally includes leadership and intellectual property as **milestones, not awards**.
 - Validate actual page rendering, keyboard controls and the archive's client-side filter behavior in a full browser before merging.
+
+## Publication-source reconciliation and individual research roles — 25 October 2026
+- The previous count of **38 DOI-linked records** is superseded by **45 of 46 records with confirmed DOI references**. The one exception is the 2018 JATIT paper on software complexity and vulnerabilities, which retains a direct official publisher issue URL and no invented DOI.
+- Seven newly verified DOI records:
+  - Accessibility compliance / IEEE CDMA: `10.1109/CDMA61895.2025.00016`.
+  - Cyber-Threat-Intelligence DOSFAN / ACM ICISDM: `10.1145/3686397.3686406` (previous CV's conference descriptor was not the publisher venue).
+  - XEmoAccent / IEEE Access: `10.1109/ACCESS.2024.3376379`.
+  - Education in the 21st Century / ACM: `10.1145/3613944.3613947`.
+  - Financial-sector big-data sentiment / JAFEB: `10.13106/jafeb.2020.vol7.no6.457`.
+  - Security assessment of four open-source systems / IAES: `10.11591/ijeecs.v16.i2.pp860-881`.
+  - Open-source web application security / IEEE ICEMIS: `10.1109/ICEMIS.2016.7745369`.
+- Rebuilt the five publication category lists and 46 `ItemList` schema entries from the corrected bibliographic JSON. A separate publisher attribution summary appears for the five papers in the research case-study portfolio.
+- **Publisher-confirmed individual roles:** the iKern author-contribution statement assigns `Validation` to `Y.J.`; the PSU QA case study assigns conceptualization, investigation and both drafting/editing stages jointly to M.A. and Y.J., with project administration to M.A.
+- **Potential publisher correction:** the Scientific Reports 2026 DDoS study names Yasir Javed as a coauthor, but its author-contribution statement assigns `Investigation, Resources` to the initials `Y.A.` instead of an unambiguous `Y.J.`. Do not infer his individual technical responsibilities until the author/contributing team resolves the initials.
+- Trust-protocol and DroneMap case studies present coauthorship; DroneMap's Senior Researcher appointment is CV-reported, and its KACST project funding acknowledgment does not establish individual grant ownership.
+- The full 46-record bibliography requires further per-record publisher/Crossref verification and a real-browser search/filter/accessibility check before public release. No change to live publishing branch.
