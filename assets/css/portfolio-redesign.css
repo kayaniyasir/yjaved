@@ -110,7 +110,7 @@ body .hero .btn:first-child{background:transparent;border:0;border-bottom:2px so
 body .hero .btn:hover,body .hero .btn.secondary:hover{background:transparent;color:#e8ac89;border-color:#e8ac89}
 body .hero .portrait-aside{
   position:relative;width:100%;max-width:390px;justify-self:end;
-  margin:0;border:0;border-radius:0;overflow:visible;background:transparent;
+  margin:0;border:0;border-radius:0;overflow:visible!important;background:transparent;
   box-shadow:none;padding:0;transform:translateY(16px)}
 body .hero .portrait-aside::before{content:"";position:absolute;top:-27px;right:-24px;width:55%;height:52%;border-top:1px solid #957b69;border-right:1px solid #957b69;opacity:.75;z-index:1;pointer-events:none}
 body .hero .portrait-frame{
@@ -186,7 +186,7 @@ body .metric:first-child,body .ra-stat:first-child{border-left-color:#cf7854}
 body .metric strong,body .ra-stat strong{font:normal clamp(44px,5.1vw,73px)/1 Georgia,serif;letter-spacing:-.07em;color:#202522}
 body .metric span,body .ra-stat span{margin-top:13px;font:600 12px/1.4 Arial,sans-serif;color:#676a65;text-transform:uppercase;letter-spacing:.07em}
 body .metrics-note{font-size:11px;color:#77776f;margin:16px 0 38px}
-body .recognition-grid,body .recognition-additions,body .ra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 35px}
+body .recognition-grid,body .recognition-additions,body .ra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0 35px}
 body .recognition-grid article,body .ra-box{
   display:flex;flex-direction:column;align-items:flex-start;min-width:0;
   padding:24px 3px 27px;border:0;border-top:1px solid #b8b3a9;border-radius:0;
@@ -201,7 +201,10 @@ body .recognition-more a{border-bottom:1px solid #ac765d;padding-bottom:5px}
 body #about{background:#fffefa}
 body #about .wrap>p:not(.lede){max-width:830px;font-size:16px;line-height:1.9}
 body #selected-impact{background:#efece5}
+body #selected-impact .grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(28px,6vw,95px)}
+body #selected-impact .card:first-child h3{font-size:clamp(27px,3vw,38px)}
 body #expertise{background:#222827;color:#f7f4ec}
+body #expertise .grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(30px,6vw,88px)}
 body #expertise .kicker{color:#e9a07d}
 body #expertise h2,body #expertise h3{color:#f6f3ec}
 body #expertise .lede,body #expertise .card p{color:#bfc5bd}
@@ -267,6 +270,8 @@ body .footer a{color:#e5b89d}
   body .hero .portrait-frame{height:420px}
 }
 @media(max-width:850px){
+  body #selected-impact .grid,body #expertise .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+
   body .wrap{width:calc(100% - 52px)}
   body .hero{padding:78px 0}
   body .hero .wrap{grid-template-columns:1fr;gap:52px}
@@ -276,6 +281,8 @@ body .footer a{color:#e5b89d}
   body .recognition-grid,body .recognition-additions,body .ra-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 }
 @media(max-width:640px){
+  body #selected-impact .grid,body #expertise .grid{grid-template-columns:1fr}
+
   html{scroll-padding-top:68px}
   body .wrap{width:calc(100% - 36px)}
   .portfolio-header .portfolio-shell{width:calc(100% - 34px)}
