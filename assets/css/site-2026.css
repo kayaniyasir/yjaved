@@ -195,6 +195,17 @@ body:not(.site-page) .site-header *,body:not(.site-page) .site-footer *{box-sizi
 @media(max-width:1050px){.recognition-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 32px}.award-filter-bar{grid-template-columns:repeat(2,minmax(0,1fr))}.award-list{column-gap:26px}.award-record{grid-template-columns:1fr;gap:8px}.award-record-meta{flex-direction:row;gap:9px;align-items:center}.award-record-content h3{font-size:22px}}
 @media(max-width:720px){.award-list{grid-template-columns:minmax(0,1fr)}.award-record{grid-template-columns:86px minmax(0,1fr);gap:15px}.award-lookup{display:block}.award-lookup p+p{margin-top:6px}.achievement-case{grid-template-columns:1fr;gap:12px}.achievement-case-side{flex-direction:row;align-items:center;gap:17px}.achievement-detail-grid{grid-template-columns:1fr;gap:17px}}
 @media(max-width:640px){.recognition-feature-grid{grid-template-columns:1fr;gap:0}.recognition-feature{padding:21px 0 24px;min-height:0}.recognition-feature h3{font-size:24px}.award-filter-bar{grid-template-columns:1fr;gap:12px;padding:16px}.award-group{padding:30px 0 34px}.award-group-head{flex-direction:column;gap:5px}.award-group-head h2{font-size:30px!important}.award-group-counter{margin:0}.award-record{grid-template-columns:minmax(0,1fr);gap:7px;padding:22px 0}.award-record-meta{flex-direction:row;gap:12px}.award-source{gap:8px 13px}.achievement-evidence{align-items:flex-start;flex-direction:column}.achievement-case-main h3{font-size:26px}.achievement-next{margin-top:23px}}
+
+/* Research evidence attribution — compact, legible and mobile-friendly. */
+.catalog-contribution{margin:12px 0 0!important;padding:10px 13px;border-left:3px solid #916348;background:#f1f1ea;color:#415448!important;font-size:11.5px!important;line-height:1.72!important}
+.catalog-contribution strong{color:#344d3b}
+.research-attribution{margin:22px 0 7px;padding:22px 26px;border-top:2px solid #a16a4b;background:#f0f1e9;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(150px,.55fr);gap:19px;align-items:start}
+.research-attribution-label{font:750 10px/1.5 var(--sans);text-transform:uppercase;letter-spacing:.1em;color:#85513a}
+.research-attribution h3{font:normal clamp(19px,2vw,25px)/1.24 var(--serif);color:#263b2d;margin:6px 0 8px}
+.research-attribution p{font-size:13px;line-height:1.8;color:#44584c;margin:0}
+.research-attribution-source{font:650 10.5px/1.65 var(--sans);color:#667464;border-left:1px solid #c2d0bf;padding-left:16px}
+@media(max-width:640px){.research-attribution{grid-template-columns:1fr;gap:12px;padding:19px 17px}.research-attribution-source{border:0;border-top:1px solid #c2d0bf;padding:8px 0 0}.catalog-contribution{font-size:12px!important}}
+@media print{.research-attribution{break-inside:avoid;background:white;border-top:1px solid #555}.catalog-contribution{background:white;border-left:2px solid #555}}
 @media print{.award-filter-bar,.award-jump,.achievement-next{display:none!important}.award-record,.achievement-case{break-inside:avoid}.award-group{break-before:auto}}
 
 @media print{.pub-toolbar,.pub-jump,.pub-summary,.pub-results,.pub-final .text-links{display:none!important}.publication-group{break-before:auto}.catalog-row{break-inside:avoid;padding:10px 0}.catalog-details h3{font-size:14pt}.catalog-actions a{color:#000}}
