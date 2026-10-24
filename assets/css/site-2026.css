@@ -50,7 +50,7 @@ body:not(.site-page) .site-header *,body:not(.site-page) .site-footer *{box-sizi
 .credibility-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;align-items:stretch}
 .credibility-item{display:flex;flex-direction:column;gap:4px;min-width:0;padding:20px 27px 20px 0;margin-right:27px;border:0;border-right:1px solid #ddd8cd;text-decoration:none;color:#27362d;transition:background-color .16s ease}
 .credibility-item:last-child{border:0;margin-right:0}
-.credibility-item span{font:700 10px/1.4 var(--sans);letter-spacing:.11em;text-transform:uppercase;color:#a26746}
+.credibility-item span{font:700 10px/1.4 var(--sans);letter-spacing:.11em;text-transform:uppercase;color:#925637}
 .credibility-item strong{display:block;font:normal 18px/1.3 var(--serif);color:#29352c;letter-spacing:-.02em}
 .credibility-item small{font:600 11px/1.6 var(--sans);color:#667366}
 .credibility-item:hover strong,.credibility-item:focus-visible strong{color:#9a5b3b}
