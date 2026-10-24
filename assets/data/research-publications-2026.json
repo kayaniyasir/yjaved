@@ -30,7 +30,12 @@
       "type": "Journal",
       "doi": "10.1038/s41598-026-35458-w",
       "url": "",
-      "status": "linked"
+      "status": "linked",
+      "authorContribution": {
+        "summary": "Named coauthor; published author-contribution initials 'Y.A.' are not unambiguously Y.J. Individual tasks require clarification.",
+        "source": "Scientific Reports author contributions and author list",
+        "status": "unclear"
+      }
     },
     {
       "year": 2026,
@@ -186,7 +191,12 @@
       "type": "Journal",
       "doi": "10.3390/technologies12080122",
       "url": "",
-      "status": "linked"
+      "status": "linked",
+      "authorContribution": {
+        "summary": "Validation (Y.J.)",
+        "source": "Publisher author-contributions statement",
+        "status": "documented"
+      }
     },
     {
       "year": 2024,
@@ -220,7 +230,12 @@
       "type": "Journal",
       "doi": "10.3390/su15108136",
       "url": "",
-      "status": "linked"
+      "status": "linked",
+      "authorContribution": {
+        "summary": "Conceptualization, investigation, original drafting, review and editing (Y.J. together with M.A.)",
+        "source": "Publisher author-contributions statement",
+        "status": "documented"
+      }
     },
     {
       "year": 2023,
@@ -375,7 +390,12 @@
       "type": "Journal",
       "doi": "10.1007/s12652-021-02968-6",
       "url": "",
-      "status": "linked"
+      "status": "linked",
+      "authorContribution": {
+        "summary": "Second-listed coauthor; individual technical tasks not established by available public record.",
+        "source": "Publisher authorship record",
+        "status": "authorship"
+      }
     },
     {
       "year": 2020,
@@ -409,7 +429,12 @@
       "type": "Journal",
       "doi": "10.1016/j.adhoc.2018.09.013",
       "url": "",
-      "status": "linked"
+      "status": "linked",
+      "authorContribution": {
+        "summary": "Named journal coauthor; project-level Senior Researcher appointment is CV-reported, not an individual contribution statement.",
+        "source": "Elsevier coauthor listing and academic CV",
+        "status": "authorship"
+      }
     },
     {
       "year": 2019,
