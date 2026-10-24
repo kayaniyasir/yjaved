@@ -65,3 +65,13 @@ Use `evidence-notes.html` to track data quality and evidence provenance.
 - Static content remains readable without JavaScript. Client-side filtering enhances the experience; all records are available to search crawlers.
 - Static checks passed: 46 HTML publication rows, 46 schema items, 46 unique titles, 38 DOI hyperlinks, five anchored categories, unique element IDs, balanced CSS braces, and correct links from the homepage.
 - Interactive verification in a real browser and live Google Search Console indexation remain future publication checks; not claimed as passed.
+
+## Awards and achievements presentation — 25 October 2026
+- Home page retains research-first hierarchy and six selected contributions; four featured distinctions appear below these with source labels and direct evidence links.
+- `recognition.html`: 17 entries in five categories (research, teaching, professional, leadership, innovation) with full static content and progressive-enhancement filters for text/category/source.
+- `achievements.html`: six structured contribution summaries separating role, action, outcome and verification status; student awards are attributed to student teams, not personally claimed.
+- On-page `cv.html` includes a concise honor summary. The existing separately downloadable PDF is not automatically regenerated and needs synchronization before final publication.
+- Independent PSU teaching register documents the President's Distinguished Teaching Award and Outstanding Teaching Award for 2020–2021. PSU professional biography also references Top Researcher, UNIMAS outstanding doctoral recognition and UMT Rector's Medal; original certifying records remain stronger for formal applications.
+- CV-only and issuer-only awards remain labeled: no invented dates, evidence URLs, rankings or patent validity claims.
+- The public archive intentionally includes leadership and intellectual property as **milestones, not awards**.
+- Validate actual page rendering, keyboard controls and the archive's client-side filter behavior in a full browser before merging.
