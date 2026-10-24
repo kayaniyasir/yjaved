@@ -57,4 +57,47 @@
   });
   update();
  }
+ /* Awards and professional milestones: progressive enhancement only. */
+ const awardSearch=document.querySelector("[data-award-search]");
+ if(awardSearch){
+  const awardCategory=document.querySelector("[data-award-category]");
+  const awardEvidence=document.querySelector("[data-award-evidence]");
+  const awardReset=document.querySelector("[data-award-reset]");
+  const awardRows=[...document.querySelectorAll("[data-award]")];
+  const awardGroups=[...document.querySelectorAll("[data-award-group]")];
+  const awardCount=document.querySelector("[data-award-count]");
+  const awardEmpty=document.querySelector("[data-award-empty]");
+  const awardUpdate=()=>{
+    const q=awardSearch.value.trim().toLocaleLowerCase();
+    const category=awardCategory?.value||"";
+    const source=awardEvidence?.value||"";
+    let shown=0;
+    for(const item of awardRows){
+      const visible=(!q||item.textContent.toLocaleLowerCase().includes(q))
+        &&(!category||item.dataset.category===category)
+        &&(!source||item.dataset.evidence===source);
+      item.hidden=!visible;
+      if(visible)shown++;
+    }
+    for(const group of awardGroups){
+      group.hidden=![...group.querySelectorAll("[data-award]")].some(item=>!item.hidden);
+    }
+    if(awardCount)awardCount.textContent=shown+" of "+awardRows.length+" records shown";
+    if(awardEmpty)awardEmpty.hidden=shown!==0;
+    if(awardReset)awardReset.hidden=!q&&!category&&!source;
+  };
+  for(const control of [awardSearch,awardCategory,awardEvidence]){
+    control?.addEventListener("input",awardUpdate);
+    control?.addEventListener("change",awardUpdate);
+  }
+  awardReset?.addEventListener("click",e=>{
+    e.preventDefault();
+    awardSearch.value="";
+    if(awardCategory)awardCategory.value="";
+    if(awardEvidence)awardEvidence.value="";
+    awardUpdate();
+    awardSearch.focus();
+  });
+  awardUpdate();
+ }
 })();
