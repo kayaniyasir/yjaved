@@ -42,3 +42,14 @@ Use `evidence-notes.html` to track data quality and evidence provenance.
 - **Verification boundary:** these were representative local mock layouts, NOT an exact deployed-browser render of the repository. The final branch itself still requires desktop and mobile screenshots and direct interactive testing before merge.
 - Repository structural scan: 16 pages have canonical/description and a single H1; all navigation elements present, no duplicate IDs or broken internal anchors; the original 160 Java exercises remain intact.
 - Remaining quality blocker: supplied portrait source resolution is low; use an approved higher-resolution image without digital face reconstruction.
+
+## Evidence and accessibility iteration — 24 October 2026
+- Added a three-link homepage evidence strip for research case studies, the independent PSU teaching-award register and academic CV.
+- Created a fifth research case study for DroneMap, with journal DOI 10.1016/j.adhoc.2018.09.013, related IEEE conference DOI 10.1109/ICARSC.2017.7964096, and project funding context.
+- Grant source: a coauthored paper explicitly acknowledges KACST project 35-157. This substantiates a project award reference, **not** the individual's status as PI or receipt of the award amount. Four other projects remain CV-reported pending award letters and linked outputs.
+- Research-specific results: the 2026 SDN-DDoS paper reports 99.36% accuracy in a single-switch simulated testbed; iKern (2024) reports 98.84% detection accuracy in its experimental system and lists Y.J. under Validation in the journal's author-contribution statement. The site describes testing limitations and does not infer real-world production performance.
+- Independent career record: an official PSU announcement names Yasir Javed as CCIS College Research Director during September 2022–August 2023. The portfolio links this source without implying it confirms every appointment date.
+- Selected publications increased from seven to eight DOI-linked papers; the public CV page, grants and research case studies now use more specific structured data.
+- CSS introduces source-linked proof-band and grant-evidence styles, mobile stacking, and a small-label contrast improvement. All 16 HTML pages reference stylesheet `v=7` to avoid stale previews.
+- Post-edit static inspection: all 16 pages retain canonical and meta description tags; no malformed JSON-LD, duplicate IDs, missing same-site HTML/anchor targets or unbalanced CSS braces found; six homepage contributions, five research cases, eight publication entries and 160 Java challenges remain present.
+- **Not completed:** true browser rendering and full mobile interactive QA of the complete GitHub-hosted pages, Google Search Console/Lighthouse measurement, approval of higher-resolution portrait, independent award letters for four remaining projects, and third-party patent/ranking registry validation. These remain release gates and should not be described as passed.
