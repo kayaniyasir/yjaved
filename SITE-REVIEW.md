@@ -10,7 +10,7 @@ Personal academic, research and professional portfolio.
 - Cite PSU teaching award and university profile from official domains.
 - Distinguish registered designs from functional invention patents.
 - Do not publish student-level data, client details, private research prototypes or non-public funding amounts.
-- Do not publish unpublished AgentDojo experiments, authorization algorithms or adaptive attacks.
+- Keep all non-public research plans, experiments and intellectual property out of the public repository unless explicitly approved.
 - No Google Analytics or external trackers are installed.
 - Accessibility: semantic headings, keyboard navigation, reduced-motion support, and responsive layouts.
 
