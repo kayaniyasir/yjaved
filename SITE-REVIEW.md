@@ -53,3 +53,15 @@ Use `evidence-notes.html` to track data quality and evidence provenance.
 - CSS introduces source-linked proof-band and grant-evidence styles, mobile stacking, and a small-label contrast improvement. All 16 HTML pages reference stylesheet `v=7` to avoid stale previews.
 - Post-edit static inspection: all 16 pages retain canonical and meta description tags; no malformed JSON-LD, duplicate IDs, missing same-site HTML/anchor targets or unbalanced CSS braces found; six homepage contributions, five research cases, eight publication entries and 160 Java challenges remain present.
 - **Not completed:** true browser rendering and full mobile interactive QA of the complete GitHub-hosted pages, Google Search Console/Lighthouse measurement, approval of higher-resolution portrait, independent award letters for four remaining projects, and third-party patent/ranking registry validation. These remain release gates and should not be described as passed.
+
+## Expanded publications directory — 25 October 2026
+- `publications.html` contains a static, indexable list of **46** deduplicated expertise-related outputs, with five research areas and client-side search, topic, type and year filters.
+- The catalog is also maintained as public, machine-readable bibliographic metadata in `assets/data/research-publications-2026.json`. The page includes an `ItemList` schema with 46 entries, publisher DOI links when known, and explicit provenance warnings for CV/profile-only entries.
+- Coverage: 17 cybersecurity/secure networks, 9 AI/software engineering, 6 robotics/intelligent systems, 12 education/accessibility/quality, 2 books/chapters. Output types: 33 journal articles, 10 conference papers, 1 book and 2 chapters.
+- 38 entries carry DOI links, 2 have alternative public source links without a confirmed DOI, and 6 have no confirmed primary publication URL. Those records need publisher-level bibliographic checks before a stronger verification claim.
+- Checked against October 2026 academic CV and external university, journal and research-library records; corrected the original title/coauthors of the ICARSC 2017 DroneMap paper and IEEE Access 2023 6G paper.
+- Not an exhaustive import of the 147 historically reported outputs: further source reconciliation, duplicate checking across Google Scholar/Scopus/ORCID, and individual DOI checks are required before claiming complete coverage.
+- Do not add unpublished manuscripts, private research details or speculative bibliometric rankings. Keep each publication's actual type (journal, conference, book, chapter) and author order accurate.
+- Static content remains readable without JavaScript. Client-side filtering enhances the experience; all records are available to search crawlers.
+- Static checks passed: 46 HTML publication rows, 46 schema items, 46 unique titles, 38 DOI hyperlinks, five anchored categories, unique element IDs, balanced CSS braces, and correct links from the homepage.
+- Interactive verification in a real browser and live Google Search Console indexation remain future publication checks; not claimed as passed.
