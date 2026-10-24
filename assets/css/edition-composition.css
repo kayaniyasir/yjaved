@@ -1,0 +1,235 @@
+/* Design edition 04 — actual page composition, not a template recolor.
+   Intentional companion to editorial-v3.css. Scoped homepage art direction
+   and distinct inner-page title treatment. 2026-10-24 */
+.signature-home{background:#faf8f4}
+.signature-home .hero.hero--edition{
+  margin:0;padding:0;border:0;position:relative;isolation:isolate;overflow:hidden;
+  background:#f6f4ee;color:#262d2a}
+.signature-home .hero.hero--edition::before,.signature-home .hero.hero--edition::after{content:none!important;display:none!important}
+.signature-home .edition-layout{
+  display:grid;grid-template-columns:minmax(0,1.12fr) minmax(330px,.82fr);
+  max-width:1500px;margin-inline:auto;min-height:565px}
+.signature-home .edition-intro{
+  min-width:0;display:flex;flex-direction:column;justify-content:center;
+  padding:clamp(42px,5vw,86px) clamp(34px,5vw,90px) clamp(41px,5vw,75px)
+          max(36px,calc((100vw - 1270px)/2 + 35px))}
+.signature-home .edition-topline{
+  display:flex;gap:15px 35px;align-items:center;flex-wrap:wrap;margin:0 0 auto;
+  padding:0 0 35px;font:700 10px/1.45 Arial,sans-serif;
+  letter-spacing:.14em;text-transform:uppercase;color:#65716b}
+.signature-home .edition-topline strong{color:#bb7653;font-weight:700}
+.signature-home .edition-kicker{
+  color:#9f603f;font:700 11px/1.5 Arial,sans-serif;
+  text-transform:uppercase;letter-spacing:.19em;margin:0 0 20px}
+.signature-home .edition-intro h1{
+  margin:0 0 22px;max-width:670px;color:#222925;
+  font:normal clamp(52px,6vw,84px)/.99 "Iowan Old Style",Baskerville,"Palatino Linotype",Georgia,serif;
+  letter-spacing:-.072em}
+.signature-home .edition-intro h1 span{display:block}
+.signature-home .edition-intro h1 span:first-child{font-size:.7em;line-height:1.16;letter-spacing:-.055em}
+.signature-home .edition-intro h1 .edition-dot{display:inline;color:#c78460}
+.signature-home .edition-lede{
+  max-width:600px;margin:0 0 18px;color:#303c34;
+  font:normal clamp(21px,2.4vw,31px)/1.3 Georgia,serif;letter-spacing:-.028em}
+.signature-home .edition-descriptor{
+  max-width:530px;margin:0;color:#666e67;font:400 14px/1.7 Arial,sans-serif}
+.signature-home .edition-actions{display:flex;flex-wrap:wrap;gap:14px 26px;margin-top:31px}
+.signature-home .edition-actions a{
+  min-height:44px;display:inline-flex;align-items:center;gap:7px;
+  padding:9px 0;border-bottom:1px solid #aa9a8c;
+  color:#27362e;text-decoration:none;background:transparent;
+  font:700 12px/1.4 Arial,sans-serif;transition:color .18s,border .18s}
+.signature-home .edition-actions a:first-child{border-bottom:2px solid #c27b56;color:#965334}
+.signature-home .edition-actions a:hover{color:#aa6847;border-bottom-color:#c27b56}
+.signature-home .edition-bottomline{
+  margin:clamp(30px,5vw,58px) 0 0;color:#717970;font:600 10px/1.6 Arial,sans-serif;
+  text-transform:uppercase;letter-spacing:.12em}
+.signature-home .edition-visual{
+  display:flex;flex-direction:column;min-width:0;position:relative;
+  background:#b99c86;overflow:hidden}
+.signature-home .edition-photo-stage{
+  position:relative;display:flex;justify-content:center;align-items:flex-end;
+  flex:1;min-height:510px;padding:55px 24px 0;overflow:hidden;
+  background:linear-gradient(132deg,#d1bbab,#b3957e 64%,#8f7764)}
+.signature-home .edition-ghost{
+  position:absolute;top:17%;left:0;right:0;text-align:center;
+  pointer-events:none;user-select:none;opacity:.21;color:#f7eee1;
+  font:normal clamp(140px,19vw,270px)/1 Georgia,serif;letter-spacing:-.15em}
+.signature-home .edition-photo-stage img{
+  position:relative;z-index:1;display:block;width:min(76%,360px);height:auto;max-height:515px;
+  object-fit:contain;object-position:bottom;filter:saturate(.74) contrast(1.06);
+  box-shadow:none;border:0;border-radius:0}
+.signature-home .edition-photo-stage.photo-unavailable::after{
+  content:"A higher-resolution portrait is needed";position:absolute;z-index:2;
+  bottom:35%;left:10%;right:10%;text-align:center;font:14px/1.6 Arial,sans-serif;color:#27342e}
+.signature-home .edition-visual-caption{
+  display:flex;justify-content:space-between;gap:15px;align-items:center;
+  min-height:56px;padding:15px 26px;background:#27312c;color:#ede9e2;
+  font:600 10px/1.45 Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em}
+.signature-home .edition-visual-caption a{color:#f0c1a2;text-decoration:none;border-bottom:1px solid #b28b73}
+.signature-home .edition-progress{
+  display:flex;align-items:center;justify-content:space-between;gap:15px;
+  padding:15px max(36px,calc((100vw - 1270px)/2 + 35px));
+  background:#222d28;color:#c2cfc2;min-height:52px;
+  font:700 10px/1.5 Arial,sans-serif;text-transform:uppercase;letter-spacing:.16em}
+.signature-home .edition-progress a{color:#f0bd9c;text-decoration:none}
+.signature-home .edition-progress a:hover{text-decoration:underline}
+/* Move the previous long introduction into a deliberate editorial spread */
+.signature-home .edition-statement{padding:clamp(65px,8vw,118px) 0;background:#fdfbf6}
+.signature-home .edition-statement .wrap{
+  display:grid;grid-template-columns:minmax(135px,.45fr) minmax(0,1.55fr);
+  align-items:start;gap:40px}
+.signature-home .edition-statement-tag{
+  color:#a66243;font:700 11px/1.5 Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em}
+.signature-home .edition-statement h2{
+  margin:0 0 23px;max-width:850px;font:normal clamp(31px,4vw,51px)/1.16 Georgia,serif;
+  color:#253029;letter-spacing:-.044em}
+.signature-home .edition-statement p:not(.edition-statement-tag){
+  max-width:800px;color:#586159;font:normal clamp(15px,1.4vw,17px)/1.87 Arial,sans-serif}
+.signature-home .edition-statement .edition-affiliation{
+  border-top:1px solid #ccc9bd;padding-top:17px;margin-top:25px;
+  font-size:12px!important;color:#85897f!important}
+/* Research overview becomes a very distinct dark strip, not a pale card grid */
+.signature-home #research-impact.research-metrics{background:#2a3430;color:#e9ede4;padding:85px 0}
+.signature-home #research-impact h2{color:#f0eee5}
+.signature-home #research-impact .kicker{color:#e7b095}
+.signature-home #research-impact .metrics-head p{color:#c1cac0}
+.signature-home #research-impact .metrics-scholar{color:#f5c5a6;border-bottom-color:#b88e75}
+.signature-home #research-impact .metric{border-left-color:#6d766e}
+.signature-home #research-impact .metric:first-child{border-left-color:#dca280}
+.signature-home #research-impact .metric strong{color:#fcf8ef}
+.signature-home #research-impact .metric span{color:#b5c2b6}
+.signature-home #research-impact .metrics-note{color:#bcc5bd}
+.signature-home #research-impact .metrics-note a,.signature-home #research-impact .recognition-update a{color:#efbe9c}
+.signature-home #research-impact .recognition-grid article{border-top-color:#728079}
+.signature-home #research-impact .recognition-label{color:#efbe9c}
+.signature-home #research-impact .recognition-grid h3{color:#f5f2eb}
+.signature-home #research-impact .recognition-grid p{color:#c7d0c8}
+.signature-home #research-impact .recognition-grid a{color:#efbe9c}
+/* Featured work uses varied editorial column widths, not a repeated card matrix */
+.signature-home #selected-impact{background:#f4f1ea}
+.signature-home #selected-impact .grid{
+  display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px 35px}
+.signature-home #selected-impact .card{grid-column:span 4;padding:24px 0 27px}
+.signature-home #selected-impact .card:first-child{
+  grid-column:span 7;background:#deded4;position:relative;
+  min-height:285px;border:0;padding:36px 40px 37px}
+.signature-home #selected-impact .card:first-child::before{
+  content:"FEATURE / 01";display:block;position:absolute;right:30px;top:26px;
+  font:700 10px/1.4 Arial,sans-serif;letter-spacing:.14em;color:#916147}
+.signature-home #selected-impact .card:first-child h3{
+  font-size:clamp(25px,3vw,37px);max-width:450px}
+.signature-home #selected-impact .card:nth-child(2){grid-column:span 5}
+.signature-home #selected-impact .card:nth-child(3),
+.signature-home #selected-impact .card:nth-child(4),
+.signature-home #selected-impact .card:nth-child(5){grid-column:span 4}
+.signature-home #selected-impact .card:nth-child(6){grid-column:span 12}
+.signature-home #selected-impact .card:nth-child(6){
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);
+  gap:8px 25px;align-items:start}
+.signature-home #selected-impact .card:nth-child(6) .badge,
+.signature-home #selected-impact .card:nth-child(6) h3{grid-column:1}
+.signature-home #selected-impact .card:nth-child(6) p,
+.signature-home #selected-impact .card:nth-child(6) a{grid-column:2}
+/* Intro and about read like a publication spread */
+.signature-home #about{background:#fffcf6}
+.signature-home #about>.wrap{display:grid;grid-template-columns:35% 1fr;column-gap:6%;align-items:start}
+.signature-home #about .kicker,.signature-home #about h2{grid-column:1}
+.signature-home #about h2{position:sticky;top:175px;align-self:start}
+.signature-home #about p,.signature-home #about .links{grid-column:2}
+.signature-home #about .lede{margin-top:0}
+.signature-home #about .links{margin-top:17px!important}
+.signature-home #expertise{background:#eae7dd;color:#27322a}
+.signature-home #expertise h2,.signature-home #expertise h3{color:#29352c}
+.signature-home #expertise .kicker{color:#a26345}
+.signature-home #expertise .lede,.signature-home #expertise .card p{color:#626b63}
+.signature-home #expertise .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px}
+.signature-home #expertise .card{border-top-color:#b4bab0}
+.signature-home #expertise .card .badge{color:#ad6a4a}
+.signature-home #expertise .card a{color:#8d5238}
+/* Interior pages: distinct bright editorial titles instead of the same dark banner */
+body:not(.signature-home) .small-hero{
+  background:#f0ede6;padding:80px 0 88px;border-bottom:1px solid #c8c5bc;color:#252d26}
+body:not(.signature-home) .small-hero::before{
+  content:"";display:block;position:absolute;top:0;left:0;bottom:0;width:5px;background:#c5805d}
+body:not(.signature-home) .small-hero h1{
+  color:#28312a;max-width:960px;font-size:clamp(39px,4.8vw,61px)}
+body:not(.signature-home) .small-hero .eyebrow{color:#a45f40}
+body:not(.signature-home) .small-hero p{color:#59645a}
+body:not(.signature-home) .small-hero a{color:#8c5237}
+/* 900px: presentation remains two-column when possible. */
+@media(max-width:940px){
+ .signature-home .edition-layout{grid-template-columns:minmax(0,1.2fr) minmax(275px,.8fr);min-height:500px}
+ .signature-home .edition-intro{padding:46px 36px}
+ .signature-home .edition-intro h1{font-size:clamp(48px,6.2vw,64px)}
+ .signature-home .edition-photo-stage{min-height:445px;padding-top:36px}
+ .signature-home .edition-photo-stage img{width:min(78%,290px)}
+ .signature-home #selected-impact .grid{gap:12px 24px}
+ .signature-home #expertise .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+/* Below tablet size the photograph becomes a neat, short stage after the title. */
+@media(max-width:720px){
+ .signature-home .edition-layout{display:flex;flex-direction:column;min-height:0}
+ .signature-home .edition-intro{padding:43px 23px 37px;gap:0}
+ .signature-home .edition-topline{margin:0 0 34px;padding:0;font-size:9px}
+ .signature-home .edition-kicker{margin-bottom:14px;font-size:10px}
+ .signature-home .edition-intro h1{font-size:clamp(45px,9vw,60px);letter-spacing:-.055em;margin-bottom:16px}
+ .signature-home .edition-lede{font-size:clamp(21px,4vw,26px);line-height:1.35}
+ .signature-home .edition-descriptor{font-size:13px;line-height:1.7}
+ .signature-home .edition-actions{margin-top:19px;gap:5px 22px}
+ .signature-home .edition-actions a{font-size:11px;min-height:42px}
+ .signature-home .edition-bottomline{margin-top:25px;font-size:9px}
+ .signature-home .edition-visual{height:auto}
+ .signature-home .edition-photo-stage{min-height:245px;height:245px;padding:8px 25px 0;align-items:flex-end}
+ .signature-home .edition-photo-stage img{width:auto;height:245px;max-height:245px;object-fit:contain}
+ .signature-home .edition-ghost{top:12%;font-size:180px}
+ .signature-home .edition-visual-caption{min-height:43px;padding:12px 24px;font-size:9px}
+ .signature-home .edition-progress{padding:13px 23px;font-size:9px}
+ .signature-home .edition-statement{padding:50px 0}
+ .signature-home .edition-statement .wrap{display:block}
+ .signature-home .edition-statement-tag{margin-bottom:20px;font-size:10px}
+ .signature-home .edition-statement h2{font-size:clamp(29px,6.5vw,40px)}
+ .signature-home .edition-statement p:not(.edition-statement-tag){font-size:14px}
+ .signature-home #research-impact.research-metrics{padding:56px 0}
+ .signature-home #selected-impact .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
+ .signature-home #selected-impact .card,
+ .signature-home #selected-impact .card:first-child,
+ .signature-home #selected-impact .card:nth-child(2),
+ .signature-home #selected-impact .card:nth-child(3),
+ .signature-home #selected-impact .card:nth-child(4),
+ .signature-home #selected-impact .card:nth-child(5),
+ .signature-home #selected-impact .card:nth-child(6){grid-column:span 1;display:flex;min-height:0}
+ .signature-home #selected-impact .card:first-child{grid-column:span 2;padding:28px}
+ .signature-home #selected-impact .card:nth-child(6) .badge,
+ .signature-home #selected-impact .card:nth-child(6) h3,
+ .signature-home #selected-impact .card:nth-child(6) p,
+ .signature-home #selected-impact .card:nth-child(6) a{grid-column:auto}
+ .signature-home #about>.wrap{display:block}
+ .signature-home #about h2{position:static}
+ .signature-home #expertise .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:500px){
+ .signature-home .edition-intro{padding:34px 18px 34px}
+ .signature-home .edition-topline{margin-bottom:27px;gap:7px 15px}
+ .signature-home .edition-intro h1{font-size:clamp(42px,11vw,52px)}
+ .signature-home .edition-intro h1 span:first-child{font-size:.75em}
+ .signature-home .edition-lede{font-size:21px}
+ .signature-home .edition-visual-caption{padding:12px 18px}
+ .signature-home .edition-progress{padding:13px 18px}
+ .signature-home #selected-impact .grid{grid-template-columns:minmax(0,1fr)}
+ .signature-home #selected-impact .card,
+ .signature-home #selected-impact .card:first-child,
+ .signature-home #selected-impact .card:nth-child(2),
+ .signature-home #selected-impact .card:nth-child(3),
+ .signature-home #selected-impact .card:nth-child(4),
+ .signature-home #selected-impact .card:nth-child(5),
+ .signature-home #selected-impact .card:nth-child(6){grid-column:1}
+ .signature-home #selected-impact .card:first-child{padding:25px 21px}
+ .signature-home #selected-impact .card:first-child h3{font-size:25px}
+ .signature-home #expertise .grid{grid-template-columns:1fr}
+ body:not(.signature-home) .small-hero{padding:47px 0 55px}
+ body:not(.signature-home) .small-hero h1{font-size:clamp(34px,9vw,45px)}
+}
+@media(prefers-reduced-motion:reduce){
+ .signature-home .edition-actions a{transition:none}
+}
