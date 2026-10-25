@@ -285,3 +285,13 @@ body:not(.site-page) .site-header *,body:not(.site-page) .site-footer *{box-sizi
 @media(max-width:720px){.training-hero{padding:43px 0 52px}.training-hub-hero{padding:65px 0}.training-hero-grid{grid-template-columns:1fr;gap:28px}.training-hero h1{font-size:clamp(39px,8.4vw,56px)}.training-facts{grid-template-columns:1fr;gap:0;margin-bottom:31px}.training-facts>div,.training-facts>div:first-child{padding:13px 0;border-left:0;border-bottom:1px solid #d5dbd1}.training-facts>div:last-child{border:0}.training-detail-layout{grid-template-columns:1fr;gap:23px}.training-aside{margin-bottom:26px}.training-method-grid{grid-template-columns:1fr;gap:18px}.training-directory-item{grid-template-columns:1fr;gap:10px;padding:26px 0}.training-directory-number{display:flex;align-items:center;gap:15px}.training-directory-number>span{font-size:34px}.training-mini-flow{grid-column:auto}.training-hero-lede{font-size:21px}}
 @media(max-width:350px){.training-flow-stage{min-height:80px}.training-flow-stage strong{font-size:17px}.training-visual{padding:16px}.training-intro-links{gap:10px}.training-mini-flow{grid-template-columns:1fr auto 1fr auto}.training-mini-flow span{font-size:10px}}
 @media print{.training-visual,.training-mini-flow{border:1px solid #999;background:white}.training-flow-stage{background:white;border:1px solid #aaa}.training-flow-stage strong{color:black}.training-directory-item,.training-content-section{break-inside:avoid}}
+
+/* Homepage: topic-first programme introductions with no people photography. */
+.training-home-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;margin-top:31px}
+.training-home-list>a{display:flex;flex-direction:column;min-height:162px;gap:11px;padding:19px 4px 18px 0;border-top:2px solid #ae8062;color:#314735;text-decoration:none}
+.training-home-list>a:hover strong{color:#986143}
+.training-home-list span{font:750 10px/1.55 var(--sans);letter-spacing:.08em;color:#93664c;text-transform:uppercase}
+.training-home-list strong{font:normal clamp(22px,2.2vw,29px)/1.26 var(--serif);color:#2a3e31;transition:color .15s}
+.training-home-list small{font:600 11px/1.65 var(--sans);color:#6d7c6c;margin-top:auto}
+@media(max-width:760px){.training-home-list{grid-template-columns:1fr;gap:0}.training-home-list>a{min-height:0;padding:19px 0 23px;gap:7px}.training-home-list strong{font-size:26px}}
+@media print{.training-home-list>a{min-height:0;break-inside:avoid}}
