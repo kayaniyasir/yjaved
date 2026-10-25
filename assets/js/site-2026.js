@@ -13,7 +13,7 @@
   menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{if(mobile())setOpen(false);else closeGroups()}));
   window.addEventListener("resize",()=>{if(!mobile()&&head.classList.contains("menu-open"))setOpen(false)});
   const current=(location.pathname.split("/").pop()||"index.html");
-  menu.querySelectorAll("a[href]").forEach(a=>{const file=a.getAttribute("href").split("#")[0];if(file===current)a.setAttribute("aria-current","page")});
+  menu.querySelectorAll("a[href]").forEach(a=>{const [file,hash]=a.getAttribute("href").split("#");if(file===current&&!hash)a.setAttribute("aria-current","page")});
   groups.forEach(g=>{if(g.querySelector('a[aria-current="page"]'))g.setAttribute("data-active","true")});
  }
  document.querySelectorAll("[data-current-year]").forEach(el=>el.textContent=String(new Date().getFullYear()));
