@@ -91,3 +91,18 @@ Use `evidence-notes.html` to track data quality and evidence provenance.
 - **Potential publisher correction:** the Scientific Reports 2026 DDoS study names Yasir Javed as a coauthor, but its author-contribution statement assigns `Investigation, Resources` to the initials `Y.A.` instead of an unambiguous `Y.J.`. Do not infer his individual technical responsibilities until the author/contributing team resolves the initials.
 - Trust-protocol and DroneMap case studies present coauthorship; DroneMap's Senior Researcher appointment is CV-reported, and its KACST project funding acknowledgment does not establish individual grant ownership.
 - The full 46-record bibliography requires further per-record publisher/Crossref verification and a real-browser search/filter/accessibility check before public release. No change to live publishing branch.
+
+## Training & professional development portfolio — 26 October 2026
+- Created `training.html` and five individual programme pages:
+  - `training-webforge.html` — WebForge 2026 (workshops 25, 26, 28 October; campus competition scheduled for 31 October); original event website and FAQ linked.
+  - `training-ieeextreme.html` — IEEEXtreme preparation; contest owned by IEEE, current 2026 official rules linked, no claims of IEEE competition ownership.
+  - `training-cv-writing.html` — CV writing and career readiness workshop offering; no undocumented delivery or participant-impact claims.
+  - `training-teaching-certificate.html` — teacher/faculty development; explicit statement that certificates require a defined institutional awarding body, not this portfolio.
+  - `training-ai-ethics.html` — applied AI ethics and governance; includes risk-register activities and links to UNESCO/NIST public guidance.
+- All six pages use self-contained text and CSS process diagrams, rather than photographs, stock images or AI-generated pictures of people. The diagram stages correspond to substantive learning tasks.
+- Updated homepage with three compact featured programmes, main Teaching & Training navigation with direct links to all five, Teaching page, Professional Services page and Achievements page.
+- Added all six pages to the sitemap (22 HTML entries total). Menu overflow on mobile is constrained and scrollable; source URLs are separate from personal endorsement claims.
+- Static audit: all six new HTML documents contain one H1, five linked programme entries in navigation, no `<img>` or social-preview human imagery, no duplicate IDs, and stylesheet v12. The latest CSS has balanced braces and responsive 980/720/350-pixel breakpoints. Full-site browser render/keyboard interaction testing remains outstanding.
+- Delivery status is conservative: WebForge 2026 is scheduled/underway on the stated dates; IEEEXtreme training is preparation; CV writing, educator development and AI ethics are workshop offerings unless delivery evidence is supplied.
+- Independent attendance, feedback scores, certificates, outcomes, licensed logos and participant photographs must not be invented or published without approval.
+- Public branch is an unmerged design draft; live GitHub Pages source branch must not be changed without user approval.
