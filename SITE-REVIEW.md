@@ -106,3 +106,14 @@ Use `evidence-notes.html` to track data quality and evidence provenance.
 - Delivery status is conservative: WebForge 2026 is scheduled/underway on the stated dates; IEEEXtreme training is preparation; CV writing, educator development and AI ethics are workshop offerings unless delivery evidence is supplied.
 - Independent attendance, feedback scores, certificates, outcomes, licensed logos and participant photographs must not be invented or published without approval.
 - Public branch is an unmerged design draft; live GitHub Pages source branch must not be changed without user approval.
+
+
+## Categorized training navigation — 26 October 2026
+- Replaced the flat Teaching & Training menu with four visually separated subject groups: Software & Programming, AI & Cybersecurity, Teaching & Faculty Development, and Career & Professional Skills.
+- Each menu category links to a matching anchored section on `training.html`; individual programme links remain available directly within the dropdown.
+- Grouped the five documented programme pages on the training hub and linked the existing Java resources, teaching portfolio and student mentoring where relevant. No undocumented training events, attendance figures or certificates were introduced.
+- Added a two-column desktop menu and single-column mobile presentation. Category headings are keyboard-accessible links rather than hover-only nested controls.
+- Adjusted `site-2026.js` to mark only non-fragment page links as the current page, preventing all four training category anchors from being simultaneously announced as current.
+- Updated stylesheet query version to `v=13` on all 22 HTML pages.
+- Static checks: all 22 pages contain one categorized training menu with four groups, reference the updated stylesheet, and have no duplicate IDs; the training hub contains four anchored category sections and five programme cards; all 160 Java exercise anchors remain.
+- **Still to verify in a full browser:** mobile dropdown scrolling, desktop panel positioning, keyboard focus and interaction, and visual alignment at representative viewports. No change to the published branch.
