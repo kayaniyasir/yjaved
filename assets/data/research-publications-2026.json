@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-25",
-  "scope": "Expertise-related publications documented in October 2026 academic CV plus verified PSU/publisher profiles; not an assertion of all 147 lifetime indexed works.",
+  "scope": "Selected publications and scholarly outputs across the research areas represented in this website.",
   "source": "October 2026 academic CV; publisher records (Nature, IEEE, ACM, MDPI, IAES, JATIT); Crossref/ORCID and coauthor publication records.",
   "categories": [
     "Cybersecurity & secure networks",
@@ -30,12 +30,7 @@
       "type": "Journal",
       "doi": "10.1038/s41598-026-35458-w",
       "url": "",
-      "status": "linked",
-      "authorContribution": {
-        "summary": "Named coauthor; published author-contribution initials 'Y.A.' are not unambiguously Y.J. Individual tasks require clarification.",
-        "source": "Scientific Reports author contributions and author list",
-        "status": "unclear"
-      }
+      "status": "linked"
     },
     {
       "year": 2026,
@@ -79,8 +74,7 @@
       "type": "Conference",
       "doi": "10.1109/CDMA61895.2025.00016",
       "url": "",
-      "status": "linked",
-      "sourceNote": "Conference proceedings DOI and coauthor listing verified"
+      "status": "linked"
     },
     {
       "year": 2025,
@@ -191,12 +185,7 @@
       "type": "Journal",
       "doi": "10.3390/technologies12080122",
       "url": "",
-      "status": "linked",
-      "authorContribution": {
-        "summary": "Validation (Y.J.)",
-        "source": "Publisher author-contributions statement",
-        "status": "documented"
-      }
+      "status": "linked"
     },
     {
       "year": 2024,
@@ -230,12 +219,7 @@
       "type": "Journal",
       "doi": "10.3390/su15108136",
       "url": "",
-      "status": "linked",
-      "authorContribution": {
-        "summary": "Conceptualization, investigation, original drafting, review and editing (Y.J. together with M.A.)",
-        "source": "Publisher author-contributions statement",
-        "status": "documented"
-      }
+      "status": "linked"
     },
     {
       "year": 2023,
@@ -390,12 +374,7 @@
       "type": "Journal",
       "doi": "10.1007/s12652-021-02968-6",
       "url": "",
-      "status": "linked",
-      "authorContribution": {
-        "summary": "Second-listed coauthor; individual technical tasks not established by available public record.",
-        "source": "Publisher authorship record",
-        "status": "authorship"
-      }
+      "status": "linked"
     },
     {
       "year": 2020,
@@ -429,12 +408,7 @@
       "type": "Journal",
       "doi": "10.1016/j.adhoc.2018.09.013",
       "url": "",
-      "status": "linked",
-      "authorContribution": {
-        "summary": "Named journal coauthor; project-level Senior Researcher appointment is CV-reported, not an individual contribution statement.",
-        "source": "Elsevier coauthor listing and academic CV",
-        "status": "authorship"
-      }
+      "status": "linked"
     },
     {
       "year": 2019,
@@ -502,7 +476,7 @@
       "doi": "",
       "url": "https://www.jatit.org/volumes/ninetysix14.php",
       "status": "linked",
-      "sourceNote": "Journal of Theoretical and Applied Information Technology official table of contents; no DOI listed"
+      "sourceNote": "Journal issue table of contents"
     },
     {
       "year": 2018,
@@ -549,6 +523,5 @@
       "status": "linked",
       "sourceNote": "IEEE proceedings identifier and coauthor paper"
     }
-  ],
-  "verificationNote": "45 DOI-linked records; one 2018 JATIT paper with publisher issue URL and no confirmed DOI. DOI metadata remains subject to individual publisher validation across the full bibliography. Specific author contributions are attributed only when journal contribution statements identify the role."
+  ]
 }
