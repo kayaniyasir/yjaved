@@ -1,0 +1,224 @@
+/* YJ composition / focused revision — research-led home, October 2026
+   Builds on editorial-v3.css without replacing shared navigation and teaching styles.
+   Preferred dark opening restored. Research and all six contributions have clear space. */
+
+/* The preferred dark opening: balanced heading, compact portrait and clear research entry */
+.signature-home .hero{
+  background:#202925;color:#f6f1e8;
+  padding:clamp(57px,6.5vw,90px) 0;
+  overflow:hidden;position:relative;isolation:isolate}
+.signature-home .hero::before{
+  content:"";display:block;position:absolute;right:0;top:0;bottom:0;
+  width:28%;background:#2d3631;z-index:-1}
+.signature-home .hero::after{display:none}
+.signature-home .hero .wrap{
+  grid-template-columns:minmax(0,1.62fr) minmax(235px,.69fr);
+  gap:clamp(33px,5vw,67px);max-width:1160px;align-items:center}
+.signature-home .hero h1{
+  font-size:clamp(52px,5.6vw,76px);line-height:1.08;
+  letter-spacing:-.048em;margin-bottom:20px}
+.signature-home .hero .hero-title{
+  color:#ebad8b;font-size:clamp(19px,2vw,27px);
+  line-height:1.43;margin-bottom:18px}
+.signature-home .hero .hero-intro{font-size:14px;line-height:1.82;max-width:610px}
+.signature-home .hero .hero-affiliation{font-size:11px;margin-top:17px}
+.signature-home .hero .actions{margin-top:26px}
+.signature-home .hero .portrait-aside{
+  max-width:285px;justify-self:center;border:0;box-shadow:none}
+.signature-home .hero .portrait-frame{max-height:none;aspect-ratio:150/187}
+.signature-home .hero .portrait-caption{margin-top:14px}
+.signature-home .hero .portrait-caption strong{font-size:19px}
+
+/* PRIMARY SECTION: visible research agenda first, with one large focus area and four supporting areas */
+.signature-home #research{
+  background:#f6f3ed;padding:clamp(66px,7vw,97px) 0 87px;
+}
+.signature-home #research .wrap>.kicker{color:#a76545}
+.signature-home #research h2{
+  font-size:clamp(37px,4.6vw,58px);max-width:760px;
+  color:#222e28;margin:7px 0 16px}
+.signature-home #research .lede{max-width:810px;margin-bottom:33px;font-size:16px}
+.signature-home #research .grid{
+  display:grid;grid-template-columns:repeat(12,minmax(0,1fr));
+  grid-auto-flow:row;gap:13px;align-items:stretch}
+.signature-home #research .card{
+  grid-column:span 3;
+  display:flex;flex-direction:column;align-items:flex-start;
+  min-height:182px;padding:25px 22px 22px;
+  border:1px solid #d7d5ce;background:#fffdf9;
+  border-radius:0;box-shadow:none;transform:none}
+.signature-home #research .card:first-child{
+  grid-column:span 6;grid-row:span 2;min-height:377px;
+  padding:clamp(25px,3vw,41px);background:#27352f;
+  border-color:#27352f;color:#f6f2e8}
+.signature-home #research .card:hover{border-color:#c77d58;box-shadow:none}
+.signature-home #research .card:first-child:hover{border-color:#e6b294}
+.signature-home #research .card h3{
+  font:normal clamp(20px,1.9vw,24px)/1.25 Georgia,serif;
+  letter-spacing:-.024em;color:#26302a;margin:0 0 12px}
+.signature-home #research .card:first-child h3{
+  font-size:clamp(27px,3vw,42px);color:#f8f3e8;line-height:1.19;max-width:440px}
+.signature-home #research .card p{
+  margin:0 0 20px;font-size:13px;line-height:1.7;color:#646d65}
+.signature-home #research .card:first-child p{
+  font-size:15px;line-height:1.78;color:#d4ddd2;max-width:455px}
+.signature-home #research .research-emphasis{
+  display:block;margin:0 0 clamp(45px,6vw,90px);font:700 10px/1.5 Arial,sans-serif;
+  letter-spacing:.16em;text-transform:uppercase;color:#e8ac8b}
+.signature-home #research .card a{
+  margin-top:auto;padding-bottom:5px;color:#995837;text-decoration:none;
+  border:0;border-bottom:1px solid #caa48d;font-size:12px}
+.signature-home #research .card:first-child a{color:#f5c4a7;border-bottom-color:#d5a18b}
+.signature-home #research>.wrap>.links{margin-top:24px!important}
+.signature-home #research>.wrap>.links a{font-size:12px}
+
+/* SECOND SECTION: editorial research metrics; no pale template metric cards */
+.signature-home #research-impact.research-metrics{
+  background:#28332d;color:#f2f0e8;padding:clamp(69px,7vw,100px) 0}
+.signature-home #research-impact h2{color:#f5f1e8}
+.signature-home #research-impact .kicker{color:#e6ac90}
+.signature-home #research-impact .metrics-head p{color:#c7d0c7}
+.signature-home #research-impact .metrics-scholar{color:#f0bd9e;border-color:#c39378}
+.signature-home #research-impact .metric{border-left-color:#687a6e}
+.signature-home #research-impact .metric:first-child{border-left-color:#dfa583}
+.signature-home #research-impact .metric strong{color:#faf8f0}
+.signature-home #research-impact .metric span{color:#bdc8be}
+.signature-home #research-impact .metrics-note{color:#bdc7bd}
+.signature-home #research-impact .metrics-note a,
+.signature-home #research-impact .recognition-update a{color:#f0c2a4}
+.signature-home #research-impact .recognition-grid article{border-top-color:#718079}
+.signature-home #research-impact .recognition-label{color:#efbd9b}
+.signature-home #research-impact .recognition-grid h3{color:#f7f5ed}
+.signature-home #research-impact .recognition-grid p{color:#c6cec4}
+.signature-home #research-impact .recognition-grid a{color:#f0bf9d}
+
+/* Third research beat: publications remain immediately before broader contributions */
+.signature-home #publications{
+  background:#fcfaf6;border-bottom:1px solid #e1dcd3}
+.signature-home #publications .pub{
+  padding:22px 0;border-bottom:1px solid #d6d7ce}
+.signature-home #publications .pub strong{
+  font-size:clamp(19px,2vw,25px);font-weight:normal}
+
+/* All six contributions equally visible: a clean 3 x 2 editorial grid */
+.signature-home #selected-impact{
+  background:#edeae3;padding:clamp(68px,7vw,95px) 0}
+.signature-home #selected-impact .lede{margin-bottom:27px}
+.signature-home #selected-impact .grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  column-gap:30px;row-gap:16px}
+.signature-home #selected-impact .card,
+.signature-home #selected-impact .card:first-child,
+.signature-home #selected-impact .card:nth-child(6){
+  display:flex;grid-column:auto;grid-row:auto;
+  min-height:245px;align-items:flex-start;
+  padding:23px 0 28px;border:0;border-top:1px solid #aeb5ac;
+  background:transparent;box-shadow:none}
+.signature-home #selected-impact .card:first-child::before{display:none}
+.signature-home #selected-impact .card h3,
+.signature-home #selected-impact .card:first-child h3{
+  max-width:100%;font:normal clamp(20px,1.85vw,25px)/1.3 Georgia,serif;
+  color:#29342d;margin:0 0 13px}
+.signature-home #selected-impact .card .badge{
+  font:700 10px/1.5 Arial,sans-serif;letter-spacing:.13em;
+  color:#a2694b;text-transform:uppercase;margin-bottom:16px}
+.signature-home #selected-impact .card p{
+  font-size:13px;line-height:1.75;color:#5b665c;margin-bottom:17px}
+.signature-home #selected-impact .card a{
+  font-size:12px;color:#8a553c;border-bottom:1px solid #ba9883;
+  margin-top:auto}
+.signature-home #selected-impact .card:nth-child(6) .badge,
+.signature-home #selected-impact .card:nth-child(6) h3,
+.signature-home #selected-impact .card:nth-child(6) p,
+.signature-home #selected-impact .card:nth-child(6) a{grid-column:auto}
+
+/* Biography follows research and contributions, in a deliberately quiet spread */
+.signature-home .edition-statement{padding:clamp(63px,7vw,95px) 0;background:#fffcf6}
+.signature-home .edition-statement .wrap{
+  display:grid;grid-template-columns:minmax(125px,.4fr) minmax(0,1.6fr);
+  align-items:start;gap:clamp(30px,5vw,75px)}
+.signature-home .edition-statement-tag{
+  color:#986346;font:700 11px/1.5 Arial,sans-serif;
+  letter-spacing:.13em;text-transform:uppercase;margin:6px 0}
+.signature-home .edition-statement h2{
+  margin:0 0 23px;max-width:850px;color:#28312a;
+  font:normal clamp(31px,3.6vw,48px)/1.2 Georgia,serif;letter-spacing:-.038em}
+.signature-home .edition-statement p:not(.edition-statement-tag){
+  font-size:15px;line-height:1.85;color:#57615a;max-width:810px}
+.signature-home .edition-statement .edition-affiliation{
+  margin-top:25px;padding-top:18px;border-top:1px solid #d6d3cb;
+  font-size:12px!important;color:#707972!important}
+.signature-home #about{background:#f6f3ed}
+.signature-home #expertise{background:#eae7df;color:#2e392f}
+.signature-home #expertise h2,.signature-home #expertise h3{color:#28352b}
+.signature-home #expertise .kicker{color:#a16b4c}
+.signature-home #expertise .lede,.signature-home #expertise .card p{color:#5c6a61}
+.signature-home #expertise .card{border-top-color:#abb6aa}
+.signature-home #expertise .badge,.signature-home #expertise .card a{color:#9d5d3d}
+.signature-home #expertise .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 30px}
+
+/* Other pages: a light editorial page title rather than a repeated dark banner */
+body:not(.signature-home) .small-hero{
+  position:relative;isolation:isolate;background:#f1eee7;
+  padding:clamp(55px,7vw,78px) 0;border:0;border-bottom:1px solid #d4d2ca}
+body:not(.signature-home) .small-hero::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:#c9825d}
+body:not(.signature-home) .small-hero h1{
+  color:#26332a;max-width:950px;font-size:clamp(37px,4.6vw,59px)}
+body:not(.signature-home) .small-hero p{color:#5d665d}
+body:not(.signature-home) .small-hero .eyebrow{color:#a6694b}
+body:not(.signature-home) .small-hero a{color:#8d5237}
+
+@media(max-width:980px){
+  .signature-home #research .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+  .signature-home #research .card{grid-column:auto;grid-row:auto;min-height:195px}
+  .signature-home #research .card:first-child{grid-column:1/-1;grid-row:auto;min-height:270px}
+  .signature-home #research .research-emphasis{margin-bottom:32px}
+  .signature-home #selected-impact .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .signature-home #expertise .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .signature-home .hero .wrap{grid-template-columns:1fr;gap:28px}
+  .signature-home .hero::before{width:0}
+  .signature-home .hero .portrait-aside{justify-self:start;max-width:275px}
+  .signature-home .hero h1{font-size:clamp(44px,7.2vw,61px)}
+  .signature-home #research{padding:55px 0}
+  .signature-home #research h2{font-size:clamp(32px,5.5vw,46px)}
+  .signature-home #research .lede{font-size:15px}
+  .signature-home .edition-statement .wrap{grid-template-columns:1fr;gap:16px}
+  .signature-home .edition-statement h2{font-size:clamp(30px,5.5vw,42px)}
+}
+@media(max-width:620px){
+  .signature-home .hero{padding:44px 0 57px}
+  .signature-home .hero .wrap{display:flex;flex-direction:column;gap:23px}
+  .signature-home .hero h1{font-size:clamp(40px,10vw,51px);margin-bottom:14px}
+  .signature-home .hero .hero-title{font-size:clamp(18px,4.7vw,22px);margin-bottom:14px}
+  .signature-home .hero .hero-intro{font-size:13px;line-height:1.73}
+  .signature-home .hero .hero-affiliation{font-size:10px}
+  .signature-home .hero .portrait-aside{
+    display:grid;grid-template-columns:116px minmax(0,1fr);
+    gap:16px;align-items:center;max-width:100%;width:100%}
+  .signature-home .hero .portrait-frame{width:116px}
+  .signature-home .hero .portrait-caption{margin:0;min-width:0}
+  .signature-home .hero .portrait-caption strong{font-size:17px}
+  .signature-home .hero .portrait-caption .links{gap:7px 13px}
+  .signature-home #research .grid,
+  .signature-home #selected-impact .grid,
+  .signature-home #expertise .grid{grid-template-columns:minmax(0,1fr);gap:10px}
+  .signature-home #research .card,
+  .signature-home #research .card:first-child{
+    grid-column:auto;grid-row:auto;min-height:0;padding:24px 22px}
+  .signature-home #research .card:first-child{min-height:245px}
+  .signature-home #research .research-emphasis{margin-bottom:34px}
+  .signature-home #research .card:first-child h3{font-size:29px}
+  .signature-home #selected-impact .card,
+  .signature-home #selected-impact .card:first-child,
+  .signature-home #selected-impact .card:nth-child(6){min-height:0;padding:21px 0 26px}
+  .signature-home .edition-statement{padding:54px 0}
+  .signature-home .edition-statement p:not(.edition-statement-tag){font-size:14px}
+}
+@media(max-width:360px){
+  .signature-home .hero .portrait-aside{grid-template-columns:105px minmax(0,1fr);gap:12px}
+  .signature-home .hero .portrait-frame{width:105px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

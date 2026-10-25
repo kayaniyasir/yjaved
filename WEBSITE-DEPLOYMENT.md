@@ -1,22 +1,25 @@
-# Dr. Yasir Javed — academic and technology consulting site
+# Website deployment and release guide
 
-## Publishing the preview through GitHub Pages
+Repository: `kayaniyasir/yjaved`
 
-Repository: `kayaniyasir/yjaved`  
-Branch: `preview/professional-academic-site-2026`  
-Folder: `/(root)`  
-Expected GitHub Pages URL (once Pages is enabled): https://kayaniyasir.github.io/yjaved/
+- Current original site: `source` branch
+- Standalone redesign: `redesign/editorial-navigation-seo-2026` branch
+- Review: [draft pull request #1](https://github.com/kayaniyasir/yjaved/pull/1)
 
-In GitHub, open **Settings → Pages**, select **Deploy from a branch** under Build and deployment, choose the preview branch and `/(root)`, then Save. GitHub will build the website and provide its actual URL in the Pages settings. Do not assume the site is published until GitHub shows a successful deployment and the URL loads.
+The redesign branch is **for review**; changes there do not mean the live site has been updated. GitHub Pages branch settings must not be changed without the site owner's explicit approval.
 
-## Important launch checks
-- Review and verify published CV claims, selected publications, and role titles.
-- Confirm consultancy enquiries should go to `yjaved@psu.edu.sa`; replace with an approved commercial contact address if the university email is not suitable for consulting enquiries.
-- Google Scholar link is deliberately omitted until confirmed.
-- Check GitHub Pages link, responsive navigation, projects, and mailto inquiry links on desktop and mobile.
-- After review, consider a separate `kayaniyasir.github.io` repository for a root-domain personal homepage (requires creating a repository).
+## Preview locally
 
-## Content additions
-Update the `projects` array near the end of `index.html` to add new ACM, research and commercial project showcase cards. Project pages should avoid confidential employer, client or student information. Publications should link to official DOI pages when verified.
+Check out the redesign branch and run `python -m http.server 8000` from the repository root, then open `http://localhost:8000/`. Use a real browser at desktop and mobile widths.
 
-This branch was prepared as a reviewable standalone site. The previous `source` branch remains unchanged.
+## Pre-release review
+
+1. Confirm appointment titles, published awards, and any biography or CV changes.
+2. Confirm image permissions and inspect portrait display quality.
+3. Verify internal and external links, page metadata, and JSON-LD.
+4. Test publication/recognition filters, navigation menus, keyboard access, and all Java exercises.
+5. Check accessibility, contrast and screen-reader labels in a real browser.
+6. Review GitHub Pages configuration, domain settings and any required `CNAME` before deployment.
+7. Keep student, client, and unpublished research information out of public commits unless specifically approved.
+
+After approval, choose a deliberate publication route and verify its actual deployed URL; do not change the Pages source merely to create a temporary preview. Recheck sitemap, canonical URLs and Search Console after launch.
